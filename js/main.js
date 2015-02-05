@@ -3,13 +3,13 @@ var GameState = function(game) {
 
 // Load images and sounds
 GameState.prototype.preload = function() {
-	this.game.load.spritesheet('player', '/assets/advnt_full.png', 32, 65, 90);
-	this.game.load.image('ground', '/assets/ledge.png');
-	this.game.load.image('powerUp', '/assets/Chest.png');
-	this.game.load.image('crate', '/assets/Crate.png');
-	this.game.load.image('end', '/assets/Door.png');
-	this.game.load.image('spikes', '/assets/Lava.png');
-	this.game.load.audio('grunt','/assets/Grunt.wav');
+	this.game.load.spritesheet('player', 'assets/advnt_full.png', 32, 65, 90);
+	this.game.load.image('ground', 'assets/ledge.png');
+	this.game.load.image('powerUp', 'assets/Chest.png');
+	this.game.load.image('crate', 'assets/Crate.png');
+	this.game.load.image('end', 'assets/Door.png');
+	this.game.load.image('spikes', 'assets/Lava.png');
+	this.game.load.audio('grunt','assets/Grunt.wav');
 };
 
 GameState.prototype.create = function() {
